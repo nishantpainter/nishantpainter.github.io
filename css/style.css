@@ -27,3 +27,13 @@ body {
 .intro p {
   margin: 0;
 }
+
+.social {
+  margin-top: 16px;
+  display: flex;
+}
+
+.social img {
+  cursor: pointer;
+  height: 24px;
+}
