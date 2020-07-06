@@ -33,6 +33,10 @@ body {
   display: flex;
 }
 
+.social a {
+  margin-right: 8px;
+}
+
 .social img {
   cursor: pointer;
   height: 24px;
