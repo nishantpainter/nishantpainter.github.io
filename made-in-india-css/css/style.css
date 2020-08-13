@@ -150,6 +150,11 @@ header nav li a {
   color: var(--orange);
 }
 
+.navigator img {
+  cursor: pointer;
+  height: 24px;
+}
+
 /*  Back to top button */
 .back-to-top {
   position: fixed;
