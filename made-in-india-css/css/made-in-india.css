@@ -1,0 +1,445 @@
+:root {
+  --orange: #f09732;
+  --blue: #173187;
+  --green: #49890e;
+  --white: #ffffff;
+  --orange-alpha-50: rgba(240, 151, 50, 0.5);
+  --blue-alpha-50: rgba(23, 49, 135, 0.5);
+  --green-alpha-50: rgba(73, 137, 14, 0.5);
+}
+
+.india-linear {
+  background: linear-gradient(
+    to bottom,
+    var(--orange),
+    var(--white),
+    var(--green)
+  );
+}
+
+.india-stripe {
+  background: linear-gradient(
+    to bottom,
+    var(--orange) 0px 10px,
+    var(--white) 10px 13px,
+    var(--blue) 13px 16px,
+    var(--white) 16px 20px,
+    var(--green) 20px 30px,
+    var(--white) 30px 40px
+  );
+  background-size: 40px 40px;
+}
+
+.india-spiral {
+  background: repeating-radial-gradient(
+    circle,
+    var(--orange) 0px 10px,
+    var(--white) 10px 13px,
+    var(--blue) 13px 16px,
+    var(--white) 16px 20px,
+    var(--green) 20px 30px,
+    var(--white) 30px 40px
+  );
+}
+
+.india-block {
+  background: radial-gradient(
+      5px 5px at 61% 61%,
+      var(--white) 50%,
+      transparent 50%
+    ),
+    radial-gradient(5px 5px at 10% 10%, var(--white) 50%, transparent 50%),
+    radial-gradient(5px 5px at 36% 36%, var(--white) 50%, transparent 50%),
+    radial-gradient(5px 5px at 36% 36%, var(--blue) 50%, transparent 50%),
+    radial-gradient(5px 5px at 88% 88%, var(--blue) 50%, transparent 50%),
+    linear-gradient(
+      to bottom,
+      var(--orange) 10px,
+      transparent 10px 20px,
+      var(--green) 20px 30px,
+      transparent 30px
+    ),
+    linear-gradient(
+      to right,
+      var(--orange) 10px,
+      transparent 10px 20px,
+      var(--green) 20px 30px,
+      transparent 30px
+    );
+  background-size: 40px 40px;
+}
+
+.india-diamond {
+  background: linear-gradient(
+      45deg,
+      transparent 10px,
+      var(--green) 10px 20px,
+      var(--white) 20px 25px,
+      var(--blue) 25px 30px,
+      var(--white) 30px 35px,
+      var(--orange) 35px 45px,
+      transparent 44px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 10px,
+      var(--green) 10px 20px,
+      var(--white) 20px 25px,
+      var(--blue) 25px 30px,
+      var(--white) 30px 35px,
+      var(--orange) 35px 45px,
+      transparent 44px
+    ),
+    linear-gradient(
+      -135deg,
+      transparent 10px,
+      var(--green) 10px 20px,
+      var(--white) 20px 25px,
+      var(--blue) 25px 30px,
+      var(--white) 30px 35px,
+      var(--orange) 35px 45px,
+      transparent 44px
+    ),
+    linear-gradient(
+      135deg,
+      transparent 10px,
+      var(--green) 10px 20px,
+      var(--white) 20px 25px,
+      var(--blue) 25px 30px,
+      var(--white) 30px 35px,
+      var(--orange) 35px 45px,
+      transparent 44px
+    );
+  background-size: 130px 130px;
+  background-position: 50% 50%;
+}
+
+.india-ring {
+  background: radial-gradient(
+    circle at center,
+    var(--white) 30%,
+    var(--green) 30% 40%,
+    var(--white) 40% 50%,
+    var(--blue) 50% 55%,
+    var(--white) 55% 60%,
+    var(--orange) 60% 70%,
+    transparent 70%
+  );
+  background-position: 50% 50%;
+  background-size: 80px 80px;
+}
+
+.india-wave {
+  background: radial-gradient(
+      circle at 50% 100%,
+      transparent 25%,
+      var(--green) 25% 35%,
+      transparent 35%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 50% 100%,
+        transparent 25%,
+        var(--orange) 25% 35%,
+        transparent 35%,
+        transparent
+      )
+      40px 55px,
+    radial-gradient(
+        circle at 50% 100%,
+        transparent 25%,
+        var(--blue) 25% 30%,
+        transparent 30%,
+        transparent
+      )
+      40px 65px;
+  background-size: 40px 80px;
+}
+
+.india-cup {
+  background: radial-gradient(
+      circle at 50% 100%,
+      transparent 25%,
+      var(--green) 25% 35%,
+      transparent 35%,
+      transparent
+    ),
+    radial-gradient(
+        circle at 50% 100%,
+        transparent 25%,
+        var(--blue) 25% 30%,
+        transparent 30%,
+        transparent
+      )
+      40px 60px,
+    radial-gradient(
+        circle at 50% 100%,
+        transparent 25%,
+        var(--orange) 25% 35%,
+        transparent 35%,
+        transparent
+      )
+      0px 40px;
+  background-size: 80px 80px;
+}
+
+.india-line {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px 5px,
+    var(--orange-alpha-50) 5px 10px,
+    var(--orange) 10px 15px,
+    var(--orange-alpha-50) 15px 20px,
+    transparent 20px 25px,
+    var(--blue-alpha-50) 25px 30px,
+    var(--blue) 30px 35px,
+    var(--blue-alpha-50) 35px 40px,
+    transparent 40px 45px,
+    var(--green-alpha-50) 45px 50px,
+    var(--green) 50px 55px,
+    var(--green-alpha-50) 55px 60px,
+    transparent 60px 65px
+  );
+}
+
+.india-bubble {
+  background: radial-gradient(
+    circle,
+    transparent 0px 5px,
+    var(--orange-alpha-50) 5px 10px,
+    var(--orange) 10px 15px,
+    transparent 15px 25px,
+    var(--blue-alpha-50) 25px 30px,
+    var(--blue) 30px 35px,
+    transparent 35px 45px,
+    var(--green-alpha-50) 45px 50px,
+    var(--green) 50px 55px,
+    transparent 50px 65px
+  );
+  background-size: 80px 80px;
+}
+
+.india-square {
+  background: linear-gradient(
+      to right,
+      transparent 0px 5px,
+      var(--orange-alpha-50) 5px 10px,
+      var(--orange) 10px 15px,
+      transparent 15px
+    ),
+    linear-gradient(
+      to left,
+      transparent 0px 5px,
+      var(--orange-alpha-50) 5px 10px,
+      var(--orange) 10px 15px,
+      transparent 15px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0px 5px,
+      var(--orange-alpha-50) 5px 10px,
+      var(--orange) 10px 15px,
+      transparent 15px
+    ),
+    linear-gradient(
+      to top,
+      transparent 0px 5px,
+      var(--orange-alpha-50) 5px 10px,
+      var(--orange) 10px 15px,
+      transparent 15px
+    ),
+    linear-gradient(
+        to right,
+        transparent 0px 5px,
+        var(--blue-alpha-50) 5px 10px,
+        var(--blue) 10px 15px,
+        transparent 15px
+      )
+      15px,
+    linear-gradient(
+        to left,
+        transparent 0px 5px,
+        var(--blue-alpha-50) 5px 10px,
+        var(--blue) 10px 15px,
+        transparent 15px
+      ) -15px,
+    linear-gradient(
+        to top,
+        transparent 0px 5px,
+        var(--blue-alpha-50) 5px 10px,
+        var(--blue) 10px 15px,
+        transparent 15px
+      )
+      0px -15px,
+    linear-gradient(
+        to bottom,
+        transparent 0px 5px,
+        var(--blue-alpha-50) 5px 10px,
+        var(--blue) 10px 15px,
+        transparent 15px
+      )
+      0px 15px,
+    linear-gradient(
+        to right,
+        transparent 0px 5px,
+        var(--green-alpha-50) 5px 10px,
+        var(--green) 10px 15px,
+        transparent 15px
+      )
+      30px,
+    linear-gradient(
+        to left,
+        transparent 0px 5px,
+        var(--green-alpha-50) 5px 10px,
+        var(--green) 10px 15px,
+        transparent 15px
+      ) -30px,
+    linear-gradient(
+        to top,
+        transparent 0px 5px,
+        var(--green-alpha-50) 5px 10px,
+        var(--green) 10px 15px,
+        transparent 15px
+      )
+      0px -30px,
+    linear-gradient(
+        to bottom,
+        transparent 0px 5px,
+        var(--green-alpha-50) 5px 10px,
+        var(--green) 10px 15px,
+        transparent 15px
+      )
+      0px 30px;
+  background-size: 120px 120px;
+}
+
+.india-cut {
+  background: linear-gradient(
+      45deg,
+      transparent 0px 20px,
+      var(--orange) 20px 30px,
+      transparent 30px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 0px 20px,
+      var(--green) 20px 30px,
+      transparent 30px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 0px 35px,
+      var(--blue) 35px 40px,
+      transparent 40px
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0px 35px,
+      var(--blue) 35px 40px,
+      transparent 40px
+    );
+  background-size: 60px 60px;
+}
+
+.india-flag {
+  background: linear-gradient(
+      to bottom,
+      var(--orange) 0px 33.33%,
+      transparent 33.33% 66.66%,
+      var(--green) 66.66% 99.99%,
+      transparent 99.99%
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 0% 13%,
+      var(--blue) 13% 15%,
+      transparent 15%
+    ),
+    linear-gradient(
+        0deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 16% 18%,
+    linear-gradient(
+        15deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 16%,
+    linear-gradient(
+        30deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 18%,
+    linear-gradient(
+        45deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 18%,
+    linear-gradient(
+        60deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 22%,
+    linear-gradient(
+        75deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 24%,
+    linear-gradient(
+        90deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 26%,
+    linear-gradient(
+        105deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 24%,
+    linear-gradient(
+        120deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 22%,
+    linear-gradient(
+        135deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 18%,
+    linear-gradient(
+        150deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 18%,
+    linear-gradient(
+        165deg,
+        transparent 0% 47.5%,
+        var(--blue) 47.5% 52.5%,
+        transparent 52.5%
+      )
+      50% 50% / 15% 16%;
+  width: 240px;
+  height: 150px;
+  background-repeat: no-repeat;
+}
