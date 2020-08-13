@@ -176,6 +176,9 @@ header nav li a {
 
 #introduction {
   height: 100vh;
+}
+
+.introduction-pattern {
   background: linear-gradient(
     135deg,
     var(--orange) 0% 30%,
