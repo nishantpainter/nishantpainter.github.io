@@ -12,19 +12,7 @@
     }
   });
 
-  // header scrolling effect
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#navigator").addClass("navigator-scrolled");
-    } else {
-      $("#navigator").removeClass("navigator-scrolled");
-    }
-  });
-
-  if ($(window).scrollTop() > 100) {
-    $("#navigator").addClass("navigator-scrolled");
-  }
-
+  
   // back to top
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
