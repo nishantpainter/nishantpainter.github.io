@@ -196,7 +196,7 @@ header nav li a {
 }
 
 #introduction .wrapper .card {
-  width: 50%;
+  width: 90%;
   max-width: 500px;
 }
 
@@ -253,6 +253,13 @@ header nav li a {
   height: 200px;
   margin-top: calc(var(--spacing) * 2);
 }
+
+@media only screen and (max-width: 600px) {
+  #patterns .wrapper .card {
+    width: 90%;
+  }
+}
+
 
 /* Footer */
 
