@@ -185,6 +185,12 @@ header nav li a {
 
 #introduction {
   height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--orange) 0% 30%,
+    var(--white) 30% 70%,
+    var(--green) 70%
+  );
 }
 
 #introduction .wrapper {
@@ -259,7 +265,6 @@ header nav li a {
     width: 90%;
   }
 }
-
 
 /* Footer */
 
