@@ -1,41 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nishant Painter" />
-    <meta name="description" content="Publication" />
-    <meta property="og:title" content="Nishant Painter Publication" />
-    <meta property="og:url" content="https://nishantpainter.github.io//" />
-    <meta property="og:description" content="Publication" />
-    <meta property="og:image" content="img/avatar.png" />
-    <link rel="icon" href="img/favicon.ico" />
-    <link rel="shortcut icon" href="img/favicon.ico” />
-    <link rel="apple-touch-icon" href="img/favicon.ico" />
-    <title>Nishant Painter | Publication</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-171631214-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+import { Metadata } from "next";
+import Image from "next/image";
 
-      gtag("config", "UA-171631214-1");
-    </script>
-    <script
-      data-ad-client="ca-pub-4302795410966209"
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
-  </head>
-  <body>
-    <section class="publication">
-      <div class="content">
+export const metadata: Metadata = {
+  title: "Publication | Nishant Painter",
+  description: "Conference papers by Nishant Painter",
+};
+
+export default function Page() {
+  return (
+    <section className="publication">
+      <div className="content">
         <h1>Publications</h1>
         <ul>
           <li>
@@ -43,8 +17,10 @@
               Machine-Learning-Based Android Malware Detection Techniques—A
               Comparative Analysis
             </h3>
-            <img
-              src="./img/springer-information-and-communication-technology-for-sustainable-development.jpg"
+            <Image
+              height={200}
+              width={135}
+              src="/img/springer-information-and-communication-technology-for-sustainable-development.jpg"
               alt="Information and Communication Technology for Sustainable Development"
             />
             <p>
@@ -69,19 +45,22 @@
               to establish probable future directions.
             </p>
             <a
-              class="btn-primary"
+              className="btn-primary"
               href="https://link.springer.com/chapter/10.1007/978-981-10-3932-4_19"
               target="_blank"
-              >See Publication</a
             >
+              See Publication
+            </a>
           </li>
 
           <li>
             <h3>
               Comparative Analysis of Android Malware Detection Techniques
             </h3>
-            <img
-              src="./img/springer-proceedings-of-the-international-conference-on-data-engineering-and-communication-technology.jpg"
+            <Image
+              height={200}
+              width={135}
+              src="/img/springer-proceedings-of-the-international-conference-on-data-engineering-and-communication-technology.jpg"
               alt="Information and Communication Technology for Sustainable Development"
             />
             <p>
@@ -98,14 +77,15 @@
               techniques and to identify plausible research direction.
             </p>
             <a
-              class="btn-primary"
+              className="btn-primary"
               href="https://link.springer.com/book/10.1007/978-981-10-1678-3"
               target="_blank"
-              >See Publication</a
             >
+              See Publication
+            </a>
           </li>
         </ul>
       </div>
     </section>
-  </body>
-</html>
+  );
+}
