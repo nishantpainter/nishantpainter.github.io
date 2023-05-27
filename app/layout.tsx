@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Script from "next/script";
-
+import { Theme } from "./theme";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -47,7 +47,9 @@ export default function RootLayout({
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       />
-      <body>{children}</body>
+      <body>
+        <Theme>{children}</Theme>
+      </body>
     </html>
   );
 }
