@@ -58,6 +58,16 @@ export default function Content() {
             </a>
           ))}
         </Box>
+        <Box mr={1} display="inline">
+          <Button
+            component={Link}
+            href="/blogs"
+            variant="contained"
+            color="secondary"
+          >
+            Blogs
+          </Button>
+        </Box>
         <Button
           component={Link}
           href="/publications"
