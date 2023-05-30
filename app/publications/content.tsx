@@ -23,10 +23,14 @@ function Publication({ href, title, img, alt, children }: PublicationProps) {
       <Image height={200} width={135} src={img} alt={alt} />
       {children}
       <Box>
-        <Button variant="contained" color="secondary">
-          <Box component="a" color="inherit" href={href} target="_blank">
-            See Publication
-          </Box>
+        <Button
+          component="a"
+          variant="contained"
+          color="secondary"
+          href={href}
+          target="_blank"
+        >
+          See Publication
         </Button>
       </Box>
     </Box>

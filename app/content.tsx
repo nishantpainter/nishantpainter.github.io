@@ -58,10 +58,13 @@ export default function Content() {
             </a>
           ))}
         </Box>
-        <Button variant="contained" color="secondary">
-          <Box component={Link} color="inherit" href="/publications">
-            Publications
-          </Box>
+        <Button
+          component={Link}
+          href="/publications"
+          variant="contained"
+          color="secondary"
+        >
+          Publications
         </Button>
       </Box>
     </Box>
