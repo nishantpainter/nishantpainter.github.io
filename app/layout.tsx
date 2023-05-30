@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     title: "Nishant Painter",
     description: "Portfolio",
   },
+  metadataBase: new URL("https://nishantpainter.com"),
 };
 
 export default function RootLayout({
