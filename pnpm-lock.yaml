@@ -12,6 +12,7 @@ specifiers:
   eslint-config-next: 13.4.3
   gh-pages: ^5.0.0
   gray-matter: ^4.0.3
+  markdown-to-jsx: ^7.2.0
   next: ^13.4.3
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -37,6 +38,7 @@ dependencies:
 devDependencies:
   gh-pages: 5.0.0
   gray-matter: 4.0.3
+  markdown-to-jsx: 7.2.0_react@18.2.0
   remark: 14.0.3
   remark-html: 15.0.2
 
@@ -2270,7 +2272,6 @@ packages:
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: false
 
   /js-yaml/3.14.1:
     resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
@@ -2379,7 +2380,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -2393,6 +2393,15 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       semver: 6.3.0
+    dev: true
+
+  /markdown-to-jsx/7.2.0_react@18.2.0:
+    resolution: {integrity: sha512-3l4/Bigjm4bEqjCR6Xr+d4DtM1X6vvtGsMGSjJYyep8RjjIvcWtrXBS8Wbfe1/P+atKNMccpsraESIaWVplzVg==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    dependencies:
+      react: 18.2.0
     dev: true
 
   /mdast-util-definitions/5.1.2:
@@ -3045,7 +3054,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}

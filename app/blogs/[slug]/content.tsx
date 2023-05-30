@@ -3,6 +3,7 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import { MarkdownToHTML } from "./markdown";
 
 export default function Content({ blog }: any) {
   return (
@@ -18,7 +19,7 @@ export default function Content({ blog }: any) {
         <Typography variant="h4">
           <b>{blog.title}</b>
         </Typography>
-        <Box dangerouslySetInnerHTML={{ __html: blog.content }} />
+        <MarkdownToHTML markdown={blog.content} />
       </Box>
     </Box>
   );

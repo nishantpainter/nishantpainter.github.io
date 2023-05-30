@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Content from "./content";
-import { markdownToHtml } from "../utils";
 import { getAllBlogs, getBlogBySlug } from "../api";
 
 export const metadata: Metadata = {
@@ -19,8 +18,6 @@ export default async function Page({ params }: any) {
   }
 
   const blog = getBlogBySlug(slug, ["title", "date", "content"]);
-
-  blog.content = await markdownToHtml(blog.content);
 
   return <Content blog={blog} />;
 }
