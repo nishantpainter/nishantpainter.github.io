@@ -16,7 +16,7 @@ export default function Content({ blog }: any) {
         pt={5}
         pb={2}
       >
-        <Typography variant="h4">
+        <Typography variant="h4" component="h1">
           <b>{blog.title}</b>
         </Typography>
         <MarkdownToHTML markdown={blog.content} />
