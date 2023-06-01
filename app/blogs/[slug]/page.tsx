@@ -22,8 +22,8 @@ export async function generateMetadata(
     openGraph: {
       title,
       description,
-      type: "article",
       url,
+      type: "article",
     },
     twitter: {
       title,

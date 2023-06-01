@@ -12,10 +12,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nishant Painter",
-    url: "https://nishantpainter.com",
     description: "Portfolio",
+    url: "https://nishantpainter.com",
     siteName: "Nishant Painter",
     locale: "en_US",
+    type: "website",
   },
   twitter: {
     title: "Nishant Painter",
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     creator: "Nishant Painter",
   },
   metadataBase: new URL("https://nishantpainter.com"),
+  category: "technology",
 };
 
 export default function RootLayout({
