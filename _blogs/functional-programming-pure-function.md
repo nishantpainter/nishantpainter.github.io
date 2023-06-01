@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Pure Function
+ogtitle: Pure Function
+ogsubtitle: Functional Programming
 date: 27-02-2021
 ---
 

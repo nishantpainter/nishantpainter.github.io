@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Referential Transparency
+ogtitle: Referential Transparency
+ogsubtitle: Functional Programming
 date: 05-03-2021
 ---
 

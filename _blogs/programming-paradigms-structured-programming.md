@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - Structured Programming
+ogtitle: Structured Programming
+ogsubtitle: Programming Paradigms
 date: 08-10-2020
 ---
 

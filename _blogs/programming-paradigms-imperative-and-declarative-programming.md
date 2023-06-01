@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - Imperative and Declarative Programming
+ogtitle: Imperative and Declarative Programming
+ogsubtitle: Programming Paradigms
 date: 10-07-2020
 ---
 

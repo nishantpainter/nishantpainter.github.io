@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Recursion
+ogtitle: Recursion
+ogsubtitle: Functional Programming
 date: 05-03-2021
 ---
 

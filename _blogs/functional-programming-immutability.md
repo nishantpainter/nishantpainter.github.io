@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Immutability
+ogtitle: Immutability
+ogsubtitle: Functional Programming
 date: 13-03-2021
 ---
 

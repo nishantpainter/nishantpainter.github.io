@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Side Effect
+ogtitle: Side Effect
+ogsubtitle: Functional Programming
 date: 17-03-2021
 ---
 

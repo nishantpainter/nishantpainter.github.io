@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Higher Order Function
+ogtitle: Higher Order Function
+ogsubtitle: Functional Programming
 date: 08-03-2021
 ---
 

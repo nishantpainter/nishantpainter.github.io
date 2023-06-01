@@ -9,9 +9,10 @@ const template = path.join(root, "lib", "og-generator", "template.ejs");
 export default async function generate(items: any[]) {
   await generator({
     html: fs.readFileSync(template, "utf-8"),
-    content: items.map(({ slug, title }) => ({
-      title,
-      subtitle: "By Nishant Painter",
+    content: items.map(({ slug, title, ogtitle, ogsubtitle }) => ({
+      title: ogtitle || title,
+      subtitle: ogsubtitle,
+      author: "By Nishant Painter",
       output: path.join(outputdir, `${slug}.png`),
     })),
   });

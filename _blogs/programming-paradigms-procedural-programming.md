@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - Procedural Programming
+ogtitle: Procedural Programming
+ogsubtitle: Programming Paradigms
 date: 16-08-2020
 ---
 

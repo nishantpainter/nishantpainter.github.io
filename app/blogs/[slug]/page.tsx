@@ -27,7 +27,7 @@ async function generateOGImages(blogs: any) {
 }
 
 export async function generateStaticParams() {
-  const blogs = getAllBlogs(["slug", "title"]);
+  const blogs = getAllBlogs(["slug", "title", "ogtitle", "ogsubtitle"]);
   await generateOGImages(blogs);
   return blogs.map((blog: any) => ({
     slug: blog.slug,

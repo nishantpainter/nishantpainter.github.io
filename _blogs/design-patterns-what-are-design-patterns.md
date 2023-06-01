@@ -1,5 +1,7 @@
 ---
 title: Design Patterns - What are Design Patterns ?
+ogtitle: What are Design Patterns ?
+ogsubtitle: Design Patterns
 date: 15-09-2021
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - What are Programming Paradigms ?
+ogtitle: What are Programming Paradigms ?
+ogsubtitle: Programming Paradigms
 date: 05-07-2020
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - Functional Programming
+ogtitle: Functional Programming
+ogsubtitle: Programming Paradigms
 date: 20-07-2020
 ---
 

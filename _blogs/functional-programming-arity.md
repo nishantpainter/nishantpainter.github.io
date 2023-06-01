@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Arity
+ogtitle: Arity
+ogsubtitle: Functional Programming
 date: 09-03-2021
 ---
 

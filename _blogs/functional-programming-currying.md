@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Currying
+ogtitle: Currying
+ogsubtitle: Functional Programming
 date: 04-03-2021
 ---
 

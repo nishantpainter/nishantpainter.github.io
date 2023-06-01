@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - First Class Function
+ogtitle: First Class Function
+ogsubtitle: Functional Programming
 date: 06-03-2021
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: Design Patterns - How to write a design pattern
+ogtitle: How to write a design pattern
+ogsubtitle: Design Patterns
 date: 21-09-2021
 ---
 

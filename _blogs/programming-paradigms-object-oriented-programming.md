@@ -1,5 +1,7 @@
 ---
 title: Programming Paradigms - Object Oriented Programming
+ogtitle: Object Oriented Programming
+ogsubtitle: Programming Paradigms
 date: 22-10-2020
 ---
 

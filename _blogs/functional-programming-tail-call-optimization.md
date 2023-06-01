@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Tail Call Optimization
+ogtitle: Tail Call Optimization
+ogsubtitle: Functional Programming
 date: 07-03-2021
 ---
 

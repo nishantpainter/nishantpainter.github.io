@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Abstraction
+ogtitle: Abstraction
+ogsubtitle: Functional Programming
 date: 20-02-2021
 ---
 

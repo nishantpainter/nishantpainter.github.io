@@ -1,5 +1,7 @@
 ---
 title: Functional Programming - Shared State
+ogtitle: Shared State
+ogsubtitle: Functional Programming
 date: 14-03-2021
 ---
 
