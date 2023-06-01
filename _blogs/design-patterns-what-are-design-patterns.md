@@ -1,6 +1,5 @@
 ---
 title: Design Patterns - What are Design Patterns ?
-slug: design-patterns-what-are-design-patterns
 date: 15-09-2021
 ---
 

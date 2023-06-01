@@ -1,6 +1,5 @@
 ---
 title: Design Patterns - How to write a design pattern
-slug: design-patterns-how-to-write-a-design-pattern
 date: 21-09-2021
 ---
 
