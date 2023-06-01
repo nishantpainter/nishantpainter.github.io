@@ -14,10 +14,14 @@ export const metadata: Metadata = {
     title: "Nishant Painter",
     url: "https://nishantpainter.com",
     description: "Portfolio",
+    siteName: "Nishant Painter",
+    locale: "en_US",
   },
   twitter: {
     title: "Nishant Painter",
     description: "Portfolio",
+    site: "@nishantpainter",
+    creator: "Nishant Painter",
   },
   metadataBase: new URL("https://nishantpainter.com"),
 };

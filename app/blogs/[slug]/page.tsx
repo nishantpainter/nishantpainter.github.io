@@ -13,13 +13,22 @@ export async function generateMetadata(
 
   const { title } = getBlogBySlug(slug, ["title"]);
 
+  const description = title;
+  const url = `${(await parent)?.openGraph?.url}/blogs/${slug}`;
+
   return {
     title,
+    description,
     openGraph: {
       title,
+      description,
+      type: "article",
+      url,
     },
     twitter: {
       title,
+      description,
+      card: "summary_large_image",
     },
   };
 }
