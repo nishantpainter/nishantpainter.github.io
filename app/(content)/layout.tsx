@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
+import Divider from "@mui/material/Divider";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -9,7 +11,7 @@ import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Link from "next/link";
+import { Socials } from "@/app/components";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -82,6 +84,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </AppBar>
       <Toolbar />
       {children}
+      <Box component="footer" sx={{ height: 60 }}>
+        <Box component={Container} height="100%">
+          <Box
+            height="100%"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Socials size="md" />
+          </Box>
+        </Box>
+      </Box>
     </>
   );
 }

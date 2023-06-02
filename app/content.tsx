@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Socials } from "@/app/components";
 
 export default function Content() {
   return (
@@ -26,38 +26,7 @@ export default function Content() {
           </b>
         </Typography>
         <Typography mb={2}>Computer Programmer&nbsp;💻🕹️☯️</Typography>
-        <Box display="flex" columnGap={1} mb={2}>
-          {[
-            {
-              title: "Github",
-              href: "https://github.com/nishantpainter",
-              alt: "Image for social site github",
-              img: "/img/github.svg",
-            },
-            {
-              title: "Linkedin",
-              href: "https://in.linkedin.com/in/nishant-painter-31388582",
-              alt: "Image for social site linkedin",
-              img: "/img/linkedin.svg",
-            },
-            {
-              title: "Stackoverflow",
-              href: "https://stackoverflow.com/users/13841339/nishant-painter",
-              alt: "Image for social site stackoverflow",
-              img: "/img/so.svg",
-            },
-            {
-              title: "Medium",
-              href: "https://medium.com/@nishantpainter",
-              alt: "Image for social site medium",
-              img: "/img/medium.svg",
-            },
-          ].map(({ href, title, alt, img }) => (
-            <a key={href} href={href} title={title} target="_blank">
-              <Image height={24} width={30} src={img} alt={alt} />
-            </a>
-          ))}
-        </Box>
+        <Socials mb={2} />
         <Box mr={1} display="inline">
           <Button
             component={Link}
