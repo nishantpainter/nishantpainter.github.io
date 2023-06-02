@@ -1,7 +1,10 @@
 ---
 title: Design Patterns - What are Design Patterns ?
+description: Design patterns are the code constructs irrespective of programming language, that offer solutions to the commonly occurring problems which are faced while developing a software.
 ogtitle: What are Design Patterns ?
 ogsubtitle: Design Patterns
+tags: ["design-patterns", "software-engineering"]
+categories: ["Programming", "Design Patterns"]
 date: 15-09-2021
 ---
 

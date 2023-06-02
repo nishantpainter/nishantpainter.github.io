@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Composition
+description: Composition is the process of combining two or more functions to get a new function or result required.
 ogtitle: Composition
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "composition"]
+categories: ["Programming", "Functional Programming"]
 date: 26-02-2021
 ---
 
@@ -31,6 +34,6 @@ const doubleOfSquareOf = compose(
   square
 );
 
-doubleOfSquareOf(2) // 8 
+doubleOfSquareOf(2) // 8
 doubleOfSquareOf(3) // 18
 ```

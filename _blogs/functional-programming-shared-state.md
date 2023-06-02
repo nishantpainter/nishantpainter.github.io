@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Shared State
+description: It refers to any variable, including both primitive and reference type, that exists in global scope or scope which is shared across different functions. 
 ogtitle: Shared State
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "shared-state"]
+categories: ["Programming", "Functional Programming"]
 date: 14-03-2021
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Higher Order Function
+description: Function that accepts function as their argument or return any function as a result are called as higher order function.
 ogtitle: Higher Order Function
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "higher-order-function"]
+categories: ["Programming", "Functional Programming"]
 date: 08-03-2021
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Recursion
+description: It is an approach to solve a given problem by iteratively calling the solution on the smaller instances for the same problem until it's reaches a termination condition.
 ogtitle: Recursion
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "recursion"]
+categories: ["Programming", "Functional Programming"]
 date: 05-03-2021
 ---
 

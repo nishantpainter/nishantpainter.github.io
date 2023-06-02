@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Side Effect
+description: Side effect is any operation that is perform by a function, besides returning a value, which modifies a value outside the local scope of that function affecting current behaviour of the overall system.
 ogtitle: Side Effect
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "side-effect"]
+categories: ["Programming", "Functional Programming"]
 date: 17-03-2021
 ---
 

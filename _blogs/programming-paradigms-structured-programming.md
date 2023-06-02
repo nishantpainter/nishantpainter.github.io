@@ -1,7 +1,10 @@
 ---
 title: Programming Paradigms - Structured Programming
+description: Structured programming divides a program into simple elements which in-turn can also contain other such elements. These are the building blocks of a structured program.
 ogtitle: Structured Programming
 ogsubtitle: Programming Paradigms
+tags: ["programming-paradigms", "structured-programming"]
+categories: ["Programming", "Programming Paradigms", "Structured Programming"]
 date: 08-10-2020
 ---
 

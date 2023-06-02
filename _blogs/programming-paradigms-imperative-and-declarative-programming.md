@@ -1,7 +1,17 @@
 ---
 title: Programming Paradigms - Imperative and Declarative Programming
+description: Difference between how and what a program instruct the computer to perform a certain task.
 ogtitle: Imperative and Declarative Programming
 ogsubtitle: Programming Paradigms
+tags:
+  ["programming-paradigms", "imperative-programming", "declarative-programing"]
+categories:
+  [
+    "Programming",
+    "Programming Paradigms",
+    "Imperative Programming",
+    "Declarative Programmin",
+  ]
 date: 10-07-2020
 ---
 

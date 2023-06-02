@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Currying
+description: Currying is an approach to divide a function with n number of arguments into n number of functions with one argument.
 ogtitle: Currying
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "currying"]
+categories: ["Programming", "Functional Programming"]
 date: 04-03-2021
 ---
 

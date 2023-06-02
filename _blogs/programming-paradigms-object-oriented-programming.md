@@ -1,7 +1,11 @@
 ---
 title: Programming Paradigms - Object Oriented Programming
+description: Object Oriented Programming (OOP) is a Programming Paradigm which is based on the concept of objects. Objects are entities that contain Data and Methods.
 ogtitle: Object Oriented Programming
 ogsubtitle: Programming Paradigms
+tags: ["programming-paradigms", "oops", "object-oriented-programming"]
+categories:
+  ["Programming", "Programming Paradigms", "Object Oriented Programming"]
 date: 22-10-2020
 ---
 

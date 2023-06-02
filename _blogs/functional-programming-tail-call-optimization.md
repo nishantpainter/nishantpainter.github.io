@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Tail Call Optimization
+description: It is a technique for preventing adding extra entries on call stack or stack frame by calling a sub routine or recursive call to same function at the end of function execution.
 ogtitle: Tail Call Optimization
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "tail-call-optimization"]
+categories: ["Programming", "Functional Programming"]
 date: 07-03-2021
 ---
 
@@ -26,7 +29,7 @@ function tailOptimizedFactorial(n, tail = 1) {
   if (n === 1) {
     return tail;
   }
-  
+
   return tailOptimizedFactorial(n - 1, n * tail);
 }
 ```

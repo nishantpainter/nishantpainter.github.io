@@ -1,7 +1,10 @@
 ---
 title: Design Patterns - How to write a design pattern
+description: A design pattern is a proven solution to a commonly occurring problem in software design. Writing a design pattern is a critical task and  demands considering various vital aspects such as the natural process of pattern formation,elements of a pattern and general guidelines.
 ogtitle: How to write a design pattern
 ogsubtitle: Design Patterns
+tags: ["design-patterns", "software-engineering"]
+categories: ["Programming", "Design Patterns"]
 date: 21-09-2021
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Programming Paradigms - What are Programming Paradigms ?
+description: Paradigms are patterns. We found patterns in every phase of our day to day environment. Whether it be eating, drinking, sleeping or any other part of our life, patterns will always be a part of it.
 ogtitle: What are Programming Paradigms ?
 ogsubtitle: Programming Paradigms
+tags: ["programming-paradigms"]
+categories: ["Programming", "Programming Paradigms"]
 date: 05-07-2020
 ---
 

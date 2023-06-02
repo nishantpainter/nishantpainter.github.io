@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Abstraction
+description: Abstraction is the process of defining general format for different methods in a program.
 ogtitle: Abstraction
 ogsubtitle: Functional Programming
+tags: ["functional-programming"]
+categories: ["Programming", "Functional Programming"]
 date: 20-02-2021
 ---
 

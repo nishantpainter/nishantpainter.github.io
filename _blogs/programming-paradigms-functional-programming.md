@@ -1,7 +1,10 @@
 ---
 title: Programming Paradigms - Functional Programming
+description: Functional Programming is a Declarative style of Programming Paradigm for writing computer programs.
 ogtitle: Functional Programming
 ogsubtitle: Programming Paradigms
+tags: ["programming-paradigms", "functional-programming"]
+categories: ["Programming", "Programming Paradigms", "Functional Programming"]
 date: 20-07-2020
 ---
 

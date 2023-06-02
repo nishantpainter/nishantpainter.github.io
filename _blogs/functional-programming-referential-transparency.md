@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - Referential Transparency
+description: It is an ability of a function such that its invocation can be replaced with actual result without changing the overall behaviour of the sytem.
 ogtitle: Referential Transparency
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "referential-transparency"]
+categories: ["Programming", "Functional Programming"]
 date: 05-03-2021
 ---
 

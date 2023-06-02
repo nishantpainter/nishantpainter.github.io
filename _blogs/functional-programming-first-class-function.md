@@ -1,7 +1,10 @@
 ---
 title: Functional Programming - First Class Function
+description: Functions which behaves and can be used like any other variable in the program are called as first class functions.
 ogtitle: First Class Function
 ogsubtitle: Functional Programming
+tags: ["functional-programming", "first-class-function"]
+categories: ["Programming", "Functional Programming"]
 date: 06-03-2021
 ---
 
@@ -9,7 +12,7 @@ date: 06-03-2021
 
 Functions which behaves and can be used like any other variable in the program are called as first class functions. For example a function can be an argument to some function call like any other variable passed as any agrument.
 
-Here function square is passed as an argument to the transform function. 
+Here function square is passed as an argument to the transform function.
 
 ```
 function square(x) {
