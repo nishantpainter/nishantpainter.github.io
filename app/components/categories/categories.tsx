@@ -32,7 +32,7 @@ export function Categories({ items = [], colorful = true }: CategoriesProps) {
   };
 
   return (
-    <Box display="flex" flexWrap="wrap" columnGap={1}>
+    <Box display="flex" flexWrap="wrap" columnGap={1} rowGap={1}>
       {items.map((category) => (
         <Chip key={category} label={category} {...getColorfulProps(category)} />
       ))}
