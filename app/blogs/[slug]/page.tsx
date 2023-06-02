@@ -11,7 +11,7 @@ export default async function Page({ params }: any) {
     return redirect("/blogs");
   }
 
-  const blog = getBlogBySlug(slug, ["title", "date", "content"]);
+  const blog = getBlogBySlug(slug, ["title", "date", "content", "categories"]);
 
   return <Content blog={blog} />;
 }
@@ -40,7 +40,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { slug } = params;
 
-  const { title } = getBlogBySlug(slug, ["title"]);
+  const { title, description } = getBlogBySlug(slug, ["title", "description"]);
 
   const url = `${(await parent)?.openGraph?.url}/blogs/${slug}`;
 
@@ -48,17 +48,17 @@ export async function generateMetadata(
 
   return {
     title,
-    description: "",
+    description,
     openGraph: {
       title,
-      description: "",
+      description,
       url,
       type: "article",
       images: img,
     },
     twitter: {
       title,
-      description: "",
+      description,
       card: "summary_large_image",
       images: img,
     },
