@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
+import Chip from "@mui/material/Chip";
 import { useRouter } from "next/navigation";
 
 export default function Content({ blogs }: any) {
@@ -30,12 +31,16 @@ export default function Content({ blogs }: any) {
         {blogs.map(
           ({
             title,
+            description,
             slug,
             date,
+            categories,
           }: {
             title: string;
+            description: string;
             slug: string;
             date: string;
+            categories: string[];
           }) => (
             <Box
               component="article"
@@ -43,26 +48,31 @@ export default function Content({ blogs }: any) {
               className="pointer"
               onClick={handleRedirect(`/blogs/${slug}`)}
               sx={{
-                "& > .title": {
+                "& .title": {
                   transition: "all 0.1s ease",
                 },
                 "&:hover": {
-                  "& > .title": {
+                  "& .title": {
                     color: "secondary.light",
                     fontWeight: "bold",
                   },
                 },
               }}
             >
-              <Typography
-                className="title"
-                variant="body1"
-                key={slug}
-                gutterBottom
-              >
-                {title}
-              </Typography>
-              <Typography color="grey.700">{date}</Typography>
+              <Box display="flex" flexDirection="column" key={slug} rowGap={2}>
+                <Typography className="title" variant="h6" key={slug}>
+                  {title}
+                </Typography>
+                <Typography variant="body1" color="grey.900">
+                  {description}
+                </Typography>
+                <Box display="flex" flexWrap="wrap" columnGap={1}>
+                  {categories.map((category) => (
+                    <Chip key={category} label={category} />
+                  ))}
+                </Box>
+                <Typography color="grey.700">{date}</Typography>
+              </Box>
               <Divider />
             </Box>
           )
