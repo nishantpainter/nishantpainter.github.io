@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Chip from "@mui/material/Chip";
+import { Categories } from "@/app/components";
 
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -92,11 +92,7 @@ export default function Content({ blogs: blogsProp }: any) {
               <Typography variant="body1" color="grey.900">
                 {description}
               </Typography>
-              <Box display="flex" flexWrap="wrap" columnGap={1}>
-                {categories.map((category) => (
-                  <Chip key={category} label={category} />
-                ))}
-              </Box>
+              <Categories items={categories} />
               <Typography color="grey.700">{date}</Typography>
               <Divider />
             </Box>
