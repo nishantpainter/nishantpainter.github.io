@@ -34,7 +34,7 @@ function Publication({ href, title, img, alt, children }: PublicationProps) {
         <Button
           component="a"
           variant="outlined"
-          color="secondary"
+          color="primary"
           href={href}
           target="_blank"
         >

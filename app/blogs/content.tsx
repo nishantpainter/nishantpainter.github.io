@@ -61,7 +61,7 @@ export default function Content({ blogs: blogsProp }: any) {
             variant="outlined"
             label="Search"
             value={search}
-            color="secondary"
+            color="primary"
             onChange={handleChangeSearch}
             InputProps={{
               startAdornment: (
@@ -85,7 +85,7 @@ export default function Content({ blogs: blogsProp }: any) {
               },
               "&:hover": {
                 "& .title": {
-                  color: "secondary.light",
+                  color: "primary.light",
                   fontWeight: "bold",
                 },
               },

@@ -45,7 +45,7 @@ function Project({ href, title, children }: ProjectProps) {
         <Button
           component="a"
           variant="outlined"
-          color="secondary"
+          color="primary"
           href={href}
           target="_blank"
         >

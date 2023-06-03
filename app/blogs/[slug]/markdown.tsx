@@ -25,7 +25,7 @@ const links = {
   a: {
     component: Link,
     props: {
-      color: "secondary",
+      color: "primary",
     },
   },
 };

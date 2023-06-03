@@ -25,7 +25,7 @@ function Description() {
           component={Link}
           href="/blogs"
           variant="outlined"
-          color="secondary"
+          color="primary"
         >
           Blogs
         </Button>
@@ -34,7 +34,7 @@ function Description() {
         component={Link}
         href="/projects"
         variant="outlined"
-        color="secondary"
+        color="primary"
       >
         Projects
       </Button>
