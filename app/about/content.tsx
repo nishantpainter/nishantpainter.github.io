@@ -135,12 +135,12 @@ function Education() {
           <ListItemText secondary="SCET, Surat, Gujarat, India">
             <b>Master of Engineering CGPA 9.69</b>
             &nbsp;
-            <br />( Apr 2021 - Current Date )
+            <br />( Sep 2014 - Jul 2016 )
           </ListItemText>
         </ListItem>
         <ListItem>
           <ListItemText secondary="SCET, Surat, Gujarat, India">
-            <b>Sep 2014 - Jul 2016</b>
+            <b>Bachelor of Engineering CGPA 9.19</b>
             &nbsp;
             <br />( Sep 2009 - Jun 2013 )
           </ListItemText>
