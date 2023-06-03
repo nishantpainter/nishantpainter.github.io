@@ -44,12 +44,20 @@ function Navigation() {
           "aria-labelledby": "navigation-menu-button",
         }}
       >
-        <MenuItem onClick={handleClose} component={Link} href="/blogs">
-          Blogs
-        </MenuItem>
-        <MenuItem onClick={handleClose} component={Link} href="/publications">
-          Publications
-        </MenuItem>
+        {[
+          { label: "Blogs", href: "/blogs" },
+          { label: "Projects", href: "/projects" },
+          { label: "Publications", href: "/publications" },
+        ].map(({ label, href }) => (
+          <MenuItem
+            key={href}
+            component={Link}
+            href={href}
+            onClick={handleClose}
+          >
+            {label}
+          </MenuItem>
+        ))}
       </Menu>
     </>
   );

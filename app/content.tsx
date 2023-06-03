@@ -38,11 +38,11 @@ export default function Content() {
         </Box>
         <Button
           component={Link}
-          href="/publications"
+          href="/projects"
           variant="outlined"
           color="secondary"
         >
-          Publications
+          Projects
         </Button>
       </Box>
     </Box>
