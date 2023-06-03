@@ -30,7 +30,7 @@ export default function Content() {
           <Button
             component={Link}
             href="/blogs"
-            variant="contained"
+            variant="outlined"
             color="secondary"
           >
             Blogs
@@ -39,7 +39,7 @@ export default function Content() {
         <Button
           component={Link}
           href="/publications"
-          variant="contained"
+          variant="outlined"
           color="secondary"
         >
           Publications
