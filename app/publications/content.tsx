@@ -16,7 +16,15 @@ type PublicationProps = {
 
 function Publication({ href, title, img, alt, children }: PublicationProps) {
   return (
-    <Box component="article" display="flex" flexDirection="column" rowGap={2}>
+    <Box
+      component="article"
+      display="flex"
+      flexDirection="column"
+      p={3}
+      rowGap={2}
+      boxShadow={8}
+      borderRadius={1}
+    >
       <Typography variant="h6">
         <b>{title}</b>
       </Typography>
@@ -25,7 +33,7 @@ function Publication({ href, title, img, alt, children }: PublicationProps) {
       <Box>
         <Button
           component="a"
-          variant="contained"
+          variant="outlined"
           color="secondary"
           href={href}
           target="_blank"
