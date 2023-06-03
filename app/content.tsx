@@ -13,7 +13,7 @@ export default function Content() {
       fixed
       display="flex"
       alignItems="center"
-      minHeight="calc(100% - 125px)" // removing header and footer space
+      minHeight="calc(100% - 165px)" // removing header and footer space
     >
       <Box>
         <Typography variant="h4" gutterBottom>
