@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { Socials } from "@/app/components";
 
 export default function Content() {
   return (
@@ -14,7 +13,7 @@ export default function Content() {
       fixed
       display="flex"
       alignItems="center"
-      minHeight="100%"
+      minHeight="calc(100% - 125px)" // removing header and footer space
     >
       <Box>
         <Typography variant="h4" gutterBottom>
@@ -26,7 +25,7 @@ export default function Content() {
           </b>
         </Typography>
         <Typography mb={2}>Computer Programmer&nbsp;💻🕹️☯️</Typography>
-        <Socials mb={2} />
+
         <Box mr={1} display="inline">
           <Button
             component={Link}

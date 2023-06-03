@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
-import Divider from "@mui/material/Divider";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -11,12 +10,11 @@ import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Socials } from "@/app/components";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Navigation() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -57,7 +55,7 @@ function Navigation() {
   );
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Header() {
   return (
     <>
       <AppBar
@@ -69,8 +67,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Box display="flex" component={Container} alignItems="center">
             <Box flexGrow={1}>
               <Typography
-                component={Link}
                 href="/"
+                component={Link}
                 variant="h5"
                 className="pointer"
                 sx={{ textDecoration: "none", color: "inherit" }}
@@ -83,19 +81,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </Toolbar>
       </AppBar>
       <Toolbar />
-      {children}
-      <Box component="footer" sx={{ height: 60 }}>
-        <Box component={Container} height="100%">
-          <Box
-            height="100%"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Socials size="md" />
-          </Box>
-        </Box>
-      </Box>
     </>
   );
 }

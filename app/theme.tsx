@@ -16,6 +16,15 @@ export const theme = createTheme({
   typography: {
     fontFamily: inter.style.fontFamily,
   },
+  components: {
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          height: 60,
+        },
+      },
+    },
+  },
 });
 
 export const Theme = ({ children }: { children: React.ReactNode }) => (
@@ -24,3 +33,5 @@ export const Theme = ({ children }: { children: React.ReactNode }) => (
     {children}
   </ThemeProvider>
 );
+
+export default Theme;
