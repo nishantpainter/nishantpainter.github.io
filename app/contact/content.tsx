@@ -24,11 +24,15 @@ export default function Content() {
         <Typography variant="h4">
           <b>Contact</b>
         </Typography>
-        <Typography variant="h6">Hello 👋</Typography>
         <Typography variant="h6">
-          Feel free to reach out for any one-to-one mentorship and training,
-          queries and consultation.
+          Hello 👋 We work with these&nbsp;
+          <Link href="/about#technologies">technologies</Link>.
         </Typography>
+        <Typography variant="h6">
+          Feel free to reach out for one-to-one mentorship and trainings,
+          industrial training, queries and consultations.
+        </Typography>
+
         <Typography>
           <Box component={Link} href="mailto:virtual.nishantpainter@gmail.com">
             Send me an email

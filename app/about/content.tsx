@@ -8,6 +8,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MuiLink from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Chip from "@mui/material/Chip";
 import { styled } from "@mui/material/styles";
 
 const Link = styled(MuiLink)({
@@ -38,6 +39,8 @@ export default function Content() {
         </Typography>
         <Divider />
         <Experience />
+        <Divider />
+        <Technologies />
         <Divider />
         <Education />
         <Divider />
@@ -79,6 +82,44 @@ function Experience() {
           </ListItemText>
         </ListItem>
       </List>
+    </>
+  );
+}
+
+function Technologies() {
+  return (
+    <>
+      <Typography variant="h6" id="technologies">
+        <b>Technologies and Tools</b>
+      </Typography>
+      <Box display="flex" flexWrap="wrap" rowGap={1} columnGap={1}>
+        {[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "SQL",
+          "PostgresSQL",
+          "NOSQL",
+          "MongoDB",
+          "NodeJS",
+          "Socket",
+          "Docker",
+          "GIT",
+          "React",
+          "NextJS",
+          "Remix",
+          "Express",
+          "NestJS",
+          "REST",
+          "Loopback",
+          "Swagger",
+          "Firebase",
+          "AppScript",
+        ].map((skill) => (
+          <Chip label={skill} key={skill} />
+        ))}
+      </Box>
     </>
   );
 }
