@@ -13,6 +13,41 @@ import { styled } from "@mui/material/styles";
 const Link = styled(MuiLink)({
   textDecoration: "none",
 });
+export default function Content() {
+  return (
+    <Box component={Container} fixed minHeight="100%">
+      <Box
+        component="main"
+        display="flex"
+        flexDirection="column"
+        rowGap={2}
+        pt={5}
+        pb={2}
+      >
+        <Typography variant="h4">
+          <b>About</b>
+        </Typography>
+        <Typography>
+          A dedicated and competent <b>full stack software engineer</b> with
+          years of experience in various application development. Detail
+          oriented and organised lead developer with creative mindset and strong
+          project management abilities. Leader of cross-functional teams
+          adhering to quality output and best practices. An overall impeccable
+          academic record consisting of double gold medal in both graduation and
+          post graduation, university topper.
+        </Typography>
+        <Divider />
+        <Experience />
+        <Divider />
+        <Education />
+        <Divider />
+        <Awards />
+        <Divider />
+        <Publications />
+      </Box>
+    </Box>
+  );
+}
 
 function Experience() {
   return (
@@ -128,7 +163,7 @@ function Publications() {
               Machine-Learning-Based Android Malware Detection Techniques—A
               Comparative Analysis
             </b>
-            &nbsp;
+            <br />
             <Link href="https://link.springer.com/chapter/10.1007/978-981-10-3932-4_19">
               Link
             </Link>
@@ -137,7 +172,7 @@ function Publications() {
         <ListItem>
           <ListItemText secondary="SPRINGER LNNS book series">
             <b>Comparative Analysis of Android Malware Detection Techniques</b>
-            &nbsp;
+            <br />
             <Link href="https://link.springer.com/chapter/10.1007/978-981-10-1678-3_12">
               Link
             </Link>
@@ -145,41 +180,5 @@ function Publications() {
         </ListItem>
       </List>
     </>
-  );
-}
-
-export default function Content() {
-  return (
-    <Box component={Container} fixed minHeight="100%">
-      <Box
-        component="main"
-        display="flex"
-        flexDirection="column"
-        rowGap={2}
-        pt={5}
-        pb={2}
-      >
-        <Typography variant="h4">
-          <b>About</b>
-        </Typography>
-        <Typography>
-          A dedicated and competent software engineer with years of experience
-          in various application development. Detail oriented and organised lead
-          developer with creative mindset and strong project management
-          abilities. Leader of cross-functional teams adhering to quality output
-          and best practices. An overall impeccable academic record consisting
-          of double gold medal in both graduation and post graduation,
-          university topper.
-        </Typography>
-        <Divider />
-        <Experience />
-        <Divider />
-        <Education />
-        <Divider />
-        <Awards />
-        <Divider />
-        <Publications />
-      </Box>
-    </Box>
   );
 }

@@ -12,7 +12,7 @@ const Link = styled(MuiLink)({
 
 export default function Content() {
   return (
-    <Box component={Container} fixed minHeight="100%">
+    <Box component={Container} fixed minHeight="calc(100% - 165px)">
       <Box
         component="main"
         display="flex"
@@ -33,13 +33,15 @@ export default function Content() {
           <Box component={Link} href="mailto:virtual.nishantpainter@gmail.com">
             Send me an email
           </Box>
-          &nbsp;:&nbsp;virtual.nishantpainter@gmail.com
+          <br />
+          <b>virtual.nishantpainter@gmail.com</b>
         </Typography>
         <Typography>
           <Box component={Link} href="https://twitter.com/nishantpainter">
             Twitter
           </Box>
-          &nbsp;:&nbsp;@nishantpainter
+          <br />
+          <b>@nishantpainter</b>
         </Typography>
         <Typography>
           <Box
