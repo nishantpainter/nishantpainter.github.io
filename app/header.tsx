@@ -48,6 +48,7 @@ function Navigation() {
           { label: "Blogs", href: "/blogs" },
           { label: "Projects", href: "/projects" },
           { label: "Publications", href: "/publications" },
+          { label: "About", href: "/about" },
         ].map(({ label, href }) => (
           <MenuItem
             key={href}
