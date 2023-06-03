@@ -1,3 +1,4 @@
+import React from "react";
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
 import * as MuiColors from "@mui/material/colors";
@@ -5,6 +6,7 @@ import * as MuiColors from "@mui/material/colors";
 type CategoriesProps = {
   items: string[];
   colorful?: boolean;
+  onClick?: (event: React.SyntheticEvent, value: string) => any;
 };
 
 const colors = Object.values(MuiColors);
@@ -23,7 +25,11 @@ function getRandomColor(str: string) {
   return (colors[hash] as any)[100];
 }
 
-export function Categories({ items = [], colorful = true }: CategoriesProps) {
+export function Categories({
+  items = [],
+  colorful = true,
+  onClick,
+}: CategoriesProps) {
   const getColorfulProps = (str: string) => {
     if (!colorful) return {};
     const backgroundColor = getRandomColor(str);
@@ -34,7 +40,13 @@ export function Categories({ items = [], colorful = true }: CategoriesProps) {
   return (
     <Box display="flex" flexWrap="wrap" columnGap={1} rowGap={1}>
       {items.map((category) => (
-        <Chip key={category} label={category} {...getColorfulProps(category)} />
+        <Chip
+          clickable
+          key={category}
+          label={category}
+          onClick={(e) => onClick?.(e, category)}
+          {...getColorfulProps(category)}
+        />
       ))}
     </Box>
   );

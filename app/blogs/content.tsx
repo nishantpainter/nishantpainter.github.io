@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { matchSorter } from "match-sorter";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
@@ -15,8 +15,9 @@ import SearchIcon from "@mui/icons-material/Search";
 
 export default function Content({ blogs: blogsProp }: any) {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(searchParams.get("search") || "");
 
   const handleRedirect = (path: string) => () => {
     router.push(path);
@@ -24,6 +25,11 @@ export default function Content({ blogs: blogsProp }: any) {
 
   const handleChangeSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
+  };
+
+  const handleCategoryClick = (event: React.SyntheticEvent, value: string) => {
+    event.stopPropagation();
+    setSearch(value);
   };
 
   const blogs: Array<{
@@ -92,7 +98,7 @@ export default function Content({ blogs: blogsProp }: any) {
               <Typography variant="body1" color="grey.900">
                 {description}
               </Typography>
-              <Categories items={categories} />
+              <Categories items={categories} onClick={handleCategoryClick} />
               <Typography color="grey.700">{date}</Typography>
               <Divider />
             </Box>
