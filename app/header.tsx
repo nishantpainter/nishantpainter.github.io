@@ -4,12 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { Logo } from "@/app/components";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -65,16 +65,15 @@ export default function Header() {
       >
         <Toolbar disableGutters>
           <Box display="flex" component={Container} alignItems="center">
-            <Box flexGrow={1}>
-              <Typography
-                href="/"
-                component={Link}
-                variant="h5"
-                className="pointer"
-                sx={{ textDecoration: "none", color: "inherit" }}
-              >
-                <b>Nishant PAINTER</b>
-              </Typography>
+            <Box
+              component={Link}
+              href="/"
+              flexGrow={1}
+              display="flex"
+              alignItems="center"
+              sx={{ textDecoration: "none", color: "inherit" }}
+            >
+              <Logo />
             </Box>
             <Navigation />
           </Box>
