@@ -1,6 +1,6 @@
 import { Metadata, ResolvingMetadata } from "next";
 import { redirect } from "next/navigation";
-import OGGenerator from "@/lib/og-generator";
+import OGImageGenerator from "@/lib/og-image-generator";
 import Content from "./content";
 import { getAllBlogs, getBlogBySlug } from "../api";
 
@@ -19,7 +19,7 @@ export default async function Page({ params }: any) {
 export const dynamicParams = false;
 
 async function generateOGImages(blogs: any) {
-  await OGGenerator(blogs)
+  await OGImageGenerator(blogs)
     .then(() => console.log("OG image generated"))
     .catch((err: any) => {
       console.error(err);
