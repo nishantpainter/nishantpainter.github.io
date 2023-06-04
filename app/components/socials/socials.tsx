@@ -23,25 +23,25 @@ export function Socials({
           title: "Github",
           href: "https://github.com/nishantpainter",
           alt: "Image for social site github",
-          img: "/img/github.svg",
+          img: "/img/social/github.svg",
         },
         {
           title: "Linkedin",
           href: "https://in.linkedin.com/in/nishant-painter-31388582",
           alt: "Image for social site linkedin",
-          img: "/img/linkedin.svg",
+          img: "/img/social/linkedin.svg",
         },
         {
           title: "Stackoverflow",
           href: "https://stackoverflow.com/users/13841339/nishant-painter",
           alt: "Image for social site stackoverflow",
-          img: "/img/so.svg",
+          img: "/img/social/so.svg",
         },
         {
           title: "Medium",
           href: "https://medium.com/@nishantpainter",
           alt: "Image for social site medium",
-          img: "/img/medium.svg",
+          img: "/img/social/medium.svg",
         },
       ].map(({ href, title, alt, img }) => (
         <a key={href} href={href} title={title} target="_blank">

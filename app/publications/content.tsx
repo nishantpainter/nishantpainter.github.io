@@ -62,7 +62,7 @@ export default function Content() {
         <Publication
           title="Machine-Learning-Based Android Malware Detection Techniques—A
               Comparative Analysis"
-          img="/img/springer-information-and-communication-technology-for-sustainable-development.jpg"
+          img="/img/publication/springer-information-and-communication-technology-for-sustainable-development.jpg"
           alt="Information and Communication Technology for Sustainable Development"
           href="https://link.springer.com/chapter/10.1007/978-981-10-3932-4_19"
         >
@@ -90,7 +90,7 @@ export default function Content() {
         </Publication>
         <Publication
           title="Comparative Analysis of Android Malware Detection Techniques"
-          img="/img/springer-proceedings-of-the-international-conference-on-data-engineering-and-communication-technology.jpg"
+          img="/img/publication/springer-proceedings-of-the-international-conference-on-data-engineering-and-communication-technology.jpg"
           alt="Information and Communication Technology for Sustainable Development"
           href="https://link.springer.com/book/10.1007/978-981-10-1678-3"
         >
