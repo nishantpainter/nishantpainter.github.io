@@ -1,11 +1,14 @@
 "use client";
 
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { Categories } from "@/app/components";
+import hljs from "highlight.js";
 import { MarkdownToHTML } from "./markdown";
+import "highlight.js/styles/monokai-sublime.css";
 
 export default function Content({ blog }: any) {
   const router = useRouter();
@@ -14,6 +17,10 @@ export default function Content({ blog }: any) {
     event.stopPropagation();
     router.push(`/blogs/?search=${value}`);
   };
+
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
 
   return (
     <Box component={Container} fixed minHeight="100%">

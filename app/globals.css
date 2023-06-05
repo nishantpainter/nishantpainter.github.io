@@ -11,3 +11,7 @@ a:visited {
 .pointer {
   cursor: pointer;
 }
+
+pre > code {
+  border-radius: 8px;
+}
