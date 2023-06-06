@@ -1,21 +1,42 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Markdown from "markdown-to-jsx";
 import type { MarkdownToJSX } from "markdown-to-jsx";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MuiLink from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";
+import Fade from "@mui/material/Fade";
 
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import DoneIcon from "@mui/icons-material/Done";
 
 const Link = styled(MuiLink)({
   textDecoration: "none",
 });
 
 const CopyIconButton = ({ content }: { content: string }) => {
+  const [copied, setCopied] = useState(false);
+
+  const timerRef = useRef<any>(null);
+
   const handleCopy = (event: React.SyntheticEvent) => {
+    timerRef?.current && clearTimeout(timerRef.current);
     navigator?.clipboard?.writeText(content);
+    setCopied(true);
+    timerRef.current = setTimeout(() => setCopied(false), 5000);
   };
+
+  useEffect(() => {
+    return () => {
+      timerRef?.current && clearTimeout(timerRef.current);
+    };
+  }, []);
 
   return (
     <Box
@@ -25,9 +46,11 @@ const CopyIconButton = ({ content }: { content: string }) => {
       top={1}
       right={1}
       zIndex={1}
-      color='inherit'
+      color="inherit"
     >
-      <ContentCopyIcon />
+      <Fade in key={String(copied)}>
+        {copied ? <DoneIcon /> : <ContentCopyIcon />}
+      </Fade>
     </Box>
   );
 };
