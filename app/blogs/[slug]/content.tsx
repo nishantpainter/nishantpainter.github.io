@@ -9,9 +9,11 @@ import { Categories } from "@/app/components";
 import hljs from "highlight.js";
 import { MarkdownToHTML } from "./markdown";
 import "highlight.js/styles/monokai-sublime.css";
+import { useThemeContext } from "@/app/theme";
 
 export default function Content({ blog }: any) {
   const router = useRouter();
+  const { isDarkMode } = useThemeContext();
 
   const handleCategoryClick = (event: React.SyntheticEvent, value: string) => {
     event.stopPropagation();
@@ -35,7 +37,11 @@ export default function Content({ blog }: any) {
         <Typography variant="h4" component="h1">
           <b>{blog.title}</b>
         </Typography>
-        <Categories items={blog.categories} onClick={handleCategoryClick} />
+        <Categories
+          items={blog.categories}
+          onClick={handleCategoryClick}
+          darkMode={isDarkMode}
+        />
         <MarkdownToHTML markdown={blog.content} />
       </Box>
     </Box>

@@ -10,12 +10,14 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { Categories } from "@/app/components";
+import { useThemeContext } from "@/app/theme";
 
 import SearchIcon from "@mui/icons-material/Search";
 
 export default function Content({ blogs: blogsProp }: any) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { isDarkMode } = useThemeContext();
 
   const [search, setSearch] = useState(searchParams.get("search") || "");
 
@@ -95,10 +97,17 @@ export default function Content({ blogs: blogsProp }: any) {
               <Typography className="title" variant="h6" key={slug}>
                 {title}
               </Typography>
-              <Typography variant="body1" color="grey.900">
+              <Typography
+                variant="body1"
+                color={`grey.${isDarkMode ? "600" : "900"}`}
+              >
                 {description}
               </Typography>
-              <Categories items={categories} onClick={handleCategoryClick} />
+              <Categories
+                items={categories}
+                onClick={handleCategoryClick}
+                darkMode={isDarkMode}
+              />
               <Typography color="grey.700">{date}</Typography>
               <Divider />
             </Box>

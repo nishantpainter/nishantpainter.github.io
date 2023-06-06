@@ -10,8 +10,12 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { Logo } from "@/app/components";
+import { useThemeContext } from "@/app/theme";
 
 import MenuIcon from "@mui/icons-material/Menu";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import { useTheme } from "@mui/material";
 
 function Navigation() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -65,13 +69,28 @@ function Navigation() {
   );
 }
 
+function ThemeModeButton({
+  onClick,
+  darkMode,
+}: {
+  onClick?: (event: React.SyntheticEvent) => any;
+  darkMode?: boolean;
+}) {
+  return (
+    <IconButton onClick={onClick}>
+      {darkMode ? <LightModeOutlinedIcon /> : <DarkModeOutlinedIcon />}
+    </IconButton>
+  );
+}
+
 export default function Header() {
+  const { isDarkMode, toggleMode } = useThemeContext();
   return (
     <>
       <AppBar
         position="fixed"
         color="transparent"
-        sx={{ backgroundColor: "white" }}
+        sx={{ backgroundColor: "background.default" }}
       >
         <Toolbar disableGutters>
           <Box display="flex" component={Container} alignItems="center">
@@ -83,9 +102,12 @@ export default function Header() {
               alignItems="center"
               sx={{ textDecoration: "none", color: "inherit" }}
             >
-              <Logo />
+              <Logo darkMode={isDarkMode} />
             </Box>
-            <Navigation />
+            <Box display="flex" alignItems="center" columnGap={1}>
+              <ThemeModeButton darkMode={isDarkMode} onClick={toggleMode} />
+              <Navigation />
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
