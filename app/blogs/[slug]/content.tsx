@@ -6,10 +6,13 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { Categories } from "@/app/components";
-import hljs from "highlight.js";
-import { MarkdownToHTML } from "./markdown";
-import "highlight.js/styles/monokai-sublime.css";
 import { useThemeContext } from "@/app/theme";
+import { MarkdownToHTML } from "./markdown";
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+import "highlight.js/styles/github-dark.css";
+
+hljs.registerLanguage('javascript', javascript);
 
 export default function Content({ blog }: any) {
   const router = useRouter();

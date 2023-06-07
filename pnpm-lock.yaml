@@ -5,6 +5,7 @@ specifiers:
   '@emotion/styled': ^11.11.0
   '@mui/icons-material': ^5.11.16
   '@mui/material': ^5.13.2
+  '@types/highlightjs': ^9.12.2
   '@types/node': 20.2.3
   '@types/react': 18.2.6
   '@types/react-dom': 18.2.4
@@ -43,6 +44,7 @@ dependencies:
   typewriter-effect: 2.20.1_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@types/highlightjs': 9.12.2
   gh-pages: 5.0.0
   gray-matter: 4.0.3
   markdown-to-jsx: 7.2.0_react@18.2.0
@@ -597,6 +599,10 @@ packages:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: true
+
+  /@types/highlightjs/9.12.2:
+    resolution: {integrity: sha512-oW2pEKwshxwBW1nVUizWQg/tnhboRtKrUKnF2hd6l4BZ0shr5ZjQ4ra/82+NEH6uWeM8JjrMGCux5enQXOQbTA==}
     dev: true
 
   /@types/json5/0.0.29:
