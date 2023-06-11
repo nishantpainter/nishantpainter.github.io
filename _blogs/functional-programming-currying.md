@@ -5,7 +5,7 @@ ogtitle: Currying
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "currying"]
 categories: ["Programming", "Functional Programming"]
-date: 04-03-2021
+date: 2021-03-04
 ---
 
 # Currying

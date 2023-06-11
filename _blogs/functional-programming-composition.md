@@ -5,7 +5,7 @@ ogtitle: Composition
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "composition"]
 categories: ["Programming", "Functional Programming"]
-date: 26-02-2021
+date: 2021-02-26
 ---
 
 # Composition

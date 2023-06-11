@@ -5,7 +5,7 @@ ogtitle: Arity
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "arity"]
 categories: ["Programming", "Functional Programming"]
-date: 09-03-2021
+date: 2021-03-09
 ---
 
 # Arity

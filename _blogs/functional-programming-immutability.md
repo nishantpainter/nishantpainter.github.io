@@ -5,7 +5,7 @@ ogtitle: Immutability
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "immutability"]
 categories: ["Programming", "Functional Programming"]
-date: 13-03-2021
+date: 2021-03-13
 ---
 
 # Immutability

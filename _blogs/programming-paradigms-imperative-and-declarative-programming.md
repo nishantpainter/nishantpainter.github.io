@@ -12,7 +12,7 @@ categories:
     "Imperative Programming",
     "Declarative Programmin",
   ]
-date: 10-07-2020
+date: 2020-07-10
 ---
 
 # Imperative and Declarative Programming

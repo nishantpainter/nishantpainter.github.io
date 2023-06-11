@@ -5,7 +5,7 @@ ogtitle: Structured Programming
 ogsubtitle: Programming Paradigms
 tags: ["programming-paradigms", "structured-programming"]
 categories: ["Programming", "Programming Paradigms", "Structured Programming"]
-date: 08-10-2020
+date: 2020-10-08
 ---
 
 # Structured Programming

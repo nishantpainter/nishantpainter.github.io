@@ -5,7 +5,7 @@ ogtitle: First Class Function
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "first-class-function"]
 categories: ["Programming", "Functional Programming"]
-date: 06-03-2021
+date: 2021-03-06
 ---
 
 # First Class Function

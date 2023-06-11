@@ -5,7 +5,7 @@ ogtitle: Higher Order Function
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "higher-order-function"]
 categories: ["Programming", "Functional Programming"]
-date: 08-03-2021
+date: 2021-03-08
 ---
 
 # Higher Order Function

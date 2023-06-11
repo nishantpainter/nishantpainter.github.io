@@ -5,7 +5,7 @@ ogtitle: How to write a design pattern
 ogsubtitle: Design Patterns
 tags: ["design-patterns", "software-engineering"]
 categories: ["Programming", "Design Patterns"]
-date: 21-09-2021
+date: 2021-09-21
 ---
 
 ## How to write a Design Pattern

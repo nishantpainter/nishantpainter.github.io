@@ -5,7 +5,7 @@ ogtitle: Functional Programming
 ogsubtitle: Programming Paradigms
 tags: ["programming-paradigms", "functional-programming"]
 categories: ["Programming", "Programming Paradigms", "Functional Programming"]
-date: 20-07-2020
+date: 2020-07-20
 ---
 
 # Functional Programming

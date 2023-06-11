@@ -5,7 +5,7 @@ ogtitle: Abstraction
 ogsubtitle: Functional Programming
 tags: ["functional-programming"]
 categories: ["Programming", "Functional Programming"]
-date: 20-02-2021
+date: 2021-02-20
 ---
 
 # Abstraction

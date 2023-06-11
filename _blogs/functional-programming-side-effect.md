@@ -5,7 +5,7 @@ ogtitle: Side Effect
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "side-effect"]
 categories: ["Programming", "Functional Programming"]
-date: 17-03-2021
+date: 2021-03-17
 ---
 
 # Side Effect

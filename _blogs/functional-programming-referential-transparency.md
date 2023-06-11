@@ -5,7 +5,7 @@ ogtitle: Referential Transparency
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "referential-transparency"]
 categories: ["Programming", "Functional Programming"]
-date: 05-03-2021
+date: 2021-03-05
 ---
 
 # Referential Transparency

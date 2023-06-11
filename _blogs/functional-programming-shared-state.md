@@ -5,7 +5,7 @@ ogtitle: Shared State
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "shared-state"]
 categories: ["Programming", "Functional Programming"]
-date: 14-03-2021
+date: 2021-03-14
 ---
 
 # Shared State

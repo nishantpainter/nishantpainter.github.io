@@ -6,7 +6,7 @@ ogsubtitle: Programming Paradigms
 tags: ["programming-paradigms", "oops", "object-oriented-programming"]
 categories:
   ["Programming", "Programming Paradigms", "Object Oriented Programming"]
-date: 22-10-2020
+date: 2020-10-22
 ---
 
 # Object Oriented Programming

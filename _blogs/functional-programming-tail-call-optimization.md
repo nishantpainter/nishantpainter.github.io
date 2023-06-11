@@ -5,7 +5,7 @@ ogtitle: Tail Call Optimization
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "tail-call-optimization"]
 categories: ["Programming", "Functional Programming"]
-date: 07-03-2021
+date: 2021-03-07
 ---
 
 # Tail Call Optimization

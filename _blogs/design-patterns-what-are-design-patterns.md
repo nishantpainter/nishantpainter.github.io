@@ -5,7 +5,7 @@ ogtitle: What are Design Patterns ?
 ogsubtitle: Design Patterns
 tags: ["design-patterns", "software-engineering"]
 categories: ["Programming", "Design Patterns"]
-date: 15-09-2021
+date: 2021-09-15
 ---
 
 # What are Design Patterns ?

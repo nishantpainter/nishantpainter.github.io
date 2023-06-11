@@ -5,7 +5,7 @@ ogtitle: Pure Function
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "pure-function"]
 categories: ["Programming", "Functional Programming"]
-date: 27-02-2021
+date: 2021-02-27
 ---
 
 # Pure Function

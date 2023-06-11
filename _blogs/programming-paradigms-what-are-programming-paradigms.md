@@ -5,7 +5,7 @@ ogtitle: What are Programming Paradigms ?
 ogsubtitle: Programming Paradigms
 tags: ["programming-paradigms"]
 categories: ["Programming", "Programming Paradigms"]
-date: 05-07-2020
+date: 2020-07-05
 ---
 
 # What are Programming Paradigms ?

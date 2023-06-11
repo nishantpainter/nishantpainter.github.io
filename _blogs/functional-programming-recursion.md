@@ -5,7 +5,7 @@ ogtitle: Recursion
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "recursion"]
 categories: ["Programming", "Functional Programming"]
-date: 05-03-2021
+date: 2021-03-05
 ---
 
 # Recursion

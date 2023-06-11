@@ -5,7 +5,7 @@ ogtitle: Procedural Programming
 ogsubtitle: Programming Paradigms
 tags: ["programming-paradigms", "procedural-programming"]
 categories: ["Programming", "Programming Paradigms", "Procedural Programming"]
-date: 16-08-2020
+date: 2020-08-16
 ---
 
 # Procedural Programming
