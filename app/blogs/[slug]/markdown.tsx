@@ -109,10 +109,24 @@ const codes = {
   },
 };
 
+const media = {
+  img: {
+    component: Box,
+    props: {
+      component: "img",
+      margin: "0 auto",
+      borderRadius: "56px",
+      display: "block",
+      boxShadow: 5,
+    },
+  },
+};
+
 const overrides: MarkdownToJSX.Overrides = {
   ...typography,
   ...links,
   ...codes,
+  ...media,
 };
 
 const options: MarkdownToJSX.Options = {
