@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
+import { format as formatDate } from "@/lib/utils/date";
 
 const blogsDirectory = path.join(process.cwd(), "_blogs");
 
@@ -41,7 +42,9 @@ export function getAllBlogs(fields: string[] = []) {
   const blogs = slugs
     .map((slug) => getBlogBySlug(slug, fields))
     .sort((blog1: any, blog2: any) =>
-      new Date(blog1.date) > new Date(blog2.date) ? -1 : 1
+      new Date(blog1.date).getTime() - new Date(blog2.date).getTime() > 0
+        ? -1
+        : 1
     );
   return blogs;
 }

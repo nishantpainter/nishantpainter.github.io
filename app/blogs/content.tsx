@@ -11,8 +11,17 @@ import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import { Categories } from "@/app/components";
 import { useThemeContext } from "@/app/theme";
+import { format } from "@/lib/utils/date";
 
 import SearchIcon from "@mui/icons-material/Search";
+
+type Blog = {
+  title: string;
+  description: string;
+  slug: string;
+  date: Date;
+  categories: string[];
+};
 
 export default function Content({ blogs: blogsProp }: any) {
   const router = useRouter();
@@ -34,14 +43,12 @@ export default function Content({ blogs: blogsProp }: any) {
     setSearch(value);
   };
 
-  const blogs: Array<{
-    title: string;
-    description: string;
-    slug: string;
-    date: string;
-    categories: string[];
-  }> = matchSorter(blogsProp, search, {
+  const blogs: Blog[] = matchSorter(blogsProp, search, {
     keys: ["slug", "title", "categories", "tags", "description"],
+    baseSort: (blog1: any, blog2: any) =>
+      new Date(blog1.date).getTime() - new Date(blog2.date).getTime() > 0
+        ? -1
+        : 1,
   });
 
   return (
@@ -75,7 +82,7 @@ export default function Content({ blogs: blogsProp }: any) {
           />
         </Box>
         <Divider />
-        {blogs.map(({ title, description, slug, date, categories }) => (
+        {blogs.map(({ title, description, slug, date, categories }: Blog) => (
           <Box
             component="article"
             key={slug}
@@ -108,7 +115,7 @@ export default function Content({ blogs: blogsProp }: any) {
                 onClick={handleCategoryClick}
                 darkMode={isDarkMode}
               />
-              <Typography color="grey.700">{date}</Typography>
+              <Typography color="grey.700">{format(date)}</Typography>
               <Divider />
             </Box>
           </Box>
