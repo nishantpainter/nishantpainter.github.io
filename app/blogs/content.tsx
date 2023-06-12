@@ -43,13 +43,11 @@ export default function Content({ blogs: blogsProp }: any) {
     setSearch(value);
   };
 
-  const blogs: Blog[] = matchSorter(blogsProp, search, {
-    keys: ["slug", "title", "categories", "tags", "description"],
-    baseSort: (blog1: any, blog2: any) =>
-      new Date(blog1.date).getTime() - new Date(blog2.date).getTime() > 0
-        ? -1
-        : 1,
-  });
+  const blogs: Blog[] = search
+    ? matchSorter(blogsProp, search, {
+        keys: ["slug", "title", "categories", "tags", "description"],
+      })
+    : blogsProp;
 
   return (
     <Box component={Container} fixed minHeight="100%">
