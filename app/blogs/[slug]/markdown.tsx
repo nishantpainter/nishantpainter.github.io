@@ -1,10 +1,4 @@
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Markdown from "markdown-to-jsx";
 import type { MarkdownToJSX } from "markdown-to-jsx";
 import { styled } from "@mui/material/styles";
@@ -12,6 +6,7 @@ import Box from "@mui/material/Box";
 import MuiLink from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";
 import Fade from "@mui/material/Fade";
+import Typography from "@mui/material/Typography";
 
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import DoneIcon from "@mui/icons-material/Done";
@@ -109,16 +104,40 @@ const codes = {
   },
 };
 
+const Figure = ({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption: string;
+}) => {
+  return (
+    <Box
+      component="figure"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+    >
+      <Box
+        src={src}
+        alt={alt}
+        component="img"
+        display="block"
+        boxShadow={5}
+        sx={{ borderRadius: 12 }}
+      ></Box>
+      <Typography mt={1} component="figcaption" variant="caption">
+        {caption}
+      </Typography>
+    </Box>
+  );
+};
+
 const media = {
-  img: {
-    component: Box,
-    props: {
-      component: "img",
-      margin: "0 auto",
-      borderRadius: "56px",
-      display: "block",
-      boxShadow: 5,
-    },
+  Figure: {
+    component: Figure,
   },
 };
 
