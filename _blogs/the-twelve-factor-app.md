@@ -1,7 +1,6 @@
 ---
 title: The Twelve Factor App
 description: The twelve factor app is a set of practices followed by developers after observing a variety of software as a service in the market. The significance of following this methodology is to promote the growth of application, easing the maintenance and limiting the cost of software over the time.
-ogsubtitle: The Twelve Factor App
 tags:
   [
     "12-factor-app",
