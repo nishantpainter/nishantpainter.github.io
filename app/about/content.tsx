@@ -199,7 +199,7 @@ function Publications() {
       </Typography>
       <List>
         <ListItem>
-          <ListItemText secondary="SPRINGER AISC book series">
+          <ListItemText secondary="SPRINGER LNNS book series">
             <b>
               Machine-Learning-Based Android Malware Detection Techniques—A
               Comparative Analysis
@@ -211,7 +211,7 @@ function Publications() {
           </ListItemText>
         </ListItem>
         <ListItem>
-          <ListItemText secondary="SPRINGER LNNS book series">
+          <ListItemText secondary="SPRINGER AISC book series">
             <b>Comparative Analysis of Android Malware Detection Techniques</b>
             <br />
             <Link href="https://link.springer.com/chapter/10.1007/978-981-10-1678-3_12">
