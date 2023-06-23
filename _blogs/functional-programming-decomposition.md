@@ -1,6 +1,6 @@
 ---
 title: Functional Programming - Decomposition
-description: Decomposition is the process of breaking complex tasks into smaller simple tasks.
+description: Decomposition is the process of breaking complex task into smaller simple tasks.
 ogtitle: Decomposition
 ogsubtitle: Functional Programming
 tags: ["functional-programming", "decomposition"]
