@@ -127,6 +127,8 @@ const Figure = ({
         display="block"
         boxShadow={5}
         sx={{ borderRadius: 12 }}
+        maxWidth="100%"
+        height="auto"
       ></Box>
       <Typography mt={1} component="figcaption" variant="caption">
         {caption}
