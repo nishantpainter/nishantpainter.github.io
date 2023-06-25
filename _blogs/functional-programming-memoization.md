@@ -16,7 +16,9 @@ Memoization speeds up program execution and optimizes computation, thereby impro
 
 For example, A _Fibonacci Sequence_ is a series of numbers starting from zero, followed by one, and progressing on the rule that the next number in the series is the summation of preceding two numbers.
 
-`[0,1,1,2,3,5,8,13,21,...]`
+```
+[0,1,1,2,3,5,8,13,21,...]
+```
 
 Below mentioned is a simple program to get the _nth element_ of the fibonacci series starting from the zeroth index.
 
