@@ -12,7 +12,7 @@ date: 2021-03-07
 
 It is a technique for preventing adding extra entries on call stack or stack frame by calling a sub routine or recursive call to same function at the end of function execution.
 
-For example, in the following factorial computation, instead of returning the arithmetic operation it call be replaced with functional call for optimization.
+For example, in the following factorial computation, instead of returning the arithmetic operation it can be replaced with functional call for optimization.
 
 ```
 function factorial(n) {
