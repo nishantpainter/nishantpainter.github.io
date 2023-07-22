@@ -29,13 +29,14 @@ export default function Content() {
           <b>About</b>
         </Typography>
         <Typography>
-          A dedicated and competent <b>full stack software engineer</b> with
-          years of experience in various application development. Detail
-          oriented and organised lead developer with creative mindset and strong
-          project management abilities. Leader of cross-functional teams
-          adhering to quality output and best practices. An overall impeccable
-          academic record consisting of double gold medal in both graduation and
-          post graduation, university topper.
+          Software engineer with 7+ years of experience in web application
+          development with strong understanding and hands-on experience in both
+          front-end and back-end technologies. Successful in leading, managing
+          multiple software engineering teams, delivering quality products on
+          time and within budget. Expertise in multiple phases of software
+          development lifecycle, from requirement gathering to development,
+          testing and deployment. Passionate about building high-quality
+          software and project management.
         </Typography>
         <Divider />
         <Experience />
@@ -94,28 +95,69 @@ function Technologies() {
       </Typography>
       <Box display="flex" flexWrap="wrap" rowGap={1} columnGap={1}>
         {[
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "TypeScript",
-          "SQL",
+          "HTML ",
+          "CSS ",
+          "JavaScript ",
+          "ECMAScript6 ",
+          "TypeScript ",
+          "React ",
+          "SSR ",
+          "CSR ",
+          "SSG ",
+          "RSC ",
+          "NextJS ",
+          "Remix ",
+          "Vite ",
+          "SASS",
+          "Bootstrap ",
+          "MaterialUI ",
+          "TailwindCSS ",
+          "Responsive Design ",
+          "NodeJS ",
+          "Express ",
+          "NestJS ",
+          "Loopback ",
+          "SQL ",
           "PostgresSQL",
-          "NOSQL",
-          "MongoDB",
-          "NodeJS",
-          "Socket",
-          "Docker",
-          "GIT",
-          "React",
-          "NextJS",
-          "Remix",
-          "Express",
-          "NestJS",
-          "REST",
-          "Loopback",
-          "Swagger",
-          "Firebase",
-          "AppScript",
+          "MySQL ",
+          "NoSQL ",
+          "MongoDB ",
+          "Jest ",
+          "Mocha ",
+          "Supertest ",
+          "Vitest ",
+          "Redis ",
+          "WebSocket ",
+          "Socket IO ",
+          "Real-time ",
+          "Offline",
+          "Dexie ",
+          "REST ",
+          "JSON ",
+          "OAuth ",
+          "API ",
+          "OpenAPI ",
+          "Swagger ",
+          "SSH ",
+          "GIT ",
+          "NPM ",
+          "Yarn ",
+          "PNPM ",
+          "Monorepo ",
+          "Extension",
+          "Microsoft add-in ",
+          "Chrome extension ",
+          "Package development ",
+          "Open Source development",
+          "Soft skills ",
+          "Project management ",
+          "Team management ",
+          "Decision making ",
+          "Leadership ",
+          "Research methodology ",
+          "Resource allocation",
+          "Agile ",
+          "Scrum",
         ].map((skill) => (
           <Chip label={skill} key={skill} />
         ))}
