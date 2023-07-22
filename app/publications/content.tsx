@@ -19,27 +19,29 @@ function Publication({ href, title, img, alt, children }: PublicationProps) {
     <Box
       component="article"
       display="flex"
-      flexDirection="column"
+      alignItems="center"
       p={3}
-      rowGap={2}
       boxShadow={8}
       borderRadius={1}
+      columnGap={2}
     >
-      <Typography variant="h6">
-        <b>{title}</b>
-      </Typography>
-      <Image height={200} width={135} src={img} alt={alt} />
-      {children}
-      <Box>
-        <Button
-          component="a"
-          variant="outlined"
-          color="primary"
-          href={href}
-          target="_blank"
-        >
-          See Publication
-        </Button>
+      <Image height={250} width={170} src={img} alt={alt} />
+      <Box display="flex" flexDirection="column" rowGap={2}>
+        <Typography variant="h6">
+          <b>{title}</b>
+        </Typography>
+        {children}
+        <Box>
+          <Button
+            component="a"
+            variant="outlined"
+            color="primary"
+            href={href}
+            target="_blank"
+          >
+            See Publication
+          </Button>
+        </Box>
       </Box>
     </Box>
   );
@@ -72,18 +74,10 @@ export default function Content() {
             has been a globally anticipated open source operating system for
             Smartphones. However, rapid advancement of Android is marred with
             augmenting threats of Android malwares that perform pernicious
-            activities on Smartphones. Malwares exercising different techniques
-            to dodge existing detection methods offer uncommon challenges for
-            their accurate detection. Signature-based detection approach and
-            machine-learning-based detection approach are the broad
-            classifications for existing Android malware detection techniques.
-            Researchers and antimalware companies have identified the
-            inefficiency of signature-based detection approach and shifted to
-            machine-learning-based detection approach to overcome the
-            limitations of signature-based detection approach. This paper
-            disserts existing machine-learning-based Android malware detection
-            techniques and presents parametric comparison of discussed malware
-            detection techniques. Hence, this paper targets to study various
+            activities on Smartphones. This paper disserts existing
+            machine-learning-based Android malware detection techniques and
+            presents parametric comparison of discussed malware detection
+            techniques. Hence, this paper targets to study various
             machine-learning-based detection techniques and to establish
             probable future directions.
           </Typography>
