@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { matchSorter } from "match-sorter";
+import NextLink from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
@@ -12,8 +13,14 @@ import Divider from "@mui/material/Divider";
 import { Categories } from "@/app/components";
 import { useThemeContext } from "@/app/theme";
 import { format } from "@/lib/utils/date";
+import { styled } from "@mui/material/styles";
 
 import SearchIcon from "@mui/icons-material/Search";
+
+const Link = styled(NextLink)({
+  textDecoration: "none",
+  color: "inherit",
+});
 
 type Blog = {
   title: string;
@@ -39,6 +46,7 @@ export default function Content({ blogs: blogsProp }: any) {
   };
 
   const handleCategoryClick = (event: React.SyntheticEvent, value: string) => {
+    event.preventDefault();
     event.stopPropagation();
     setSearch(value);
   };
@@ -85,7 +93,7 @@ export default function Content({ blogs: blogsProp }: any) {
             component="article"
             key={slug}
             className="pointer"
-            onClick={handleRedirect(`/blogs/${slug}`)}
+            // onClick={handleRedirect(`/blogs/${slug}`)}
             sx={{
               "& .title": {
                 transition: "all 0.1s ease",
@@ -98,23 +106,25 @@ export default function Content({ blogs: blogsProp }: any) {
               },
             }}
           >
-            <Box display="flex" flexDirection="column" key={slug} rowGap={2}>
-              <Typography className="title" variant="h6" key={slug}>
-                {title}
-              </Typography>
-              <Typography
-                variant="body1"
-                color={`grey.${isDarkMode ? "600" : "900"}`}
-              >
-                {description}
-              </Typography>
-              <Categories
-                items={categories}
-                onClick={handleCategoryClick}
-                darkMode={isDarkMode}
-              />
-              <Typography color="grey.700">{format(date)}</Typography>
-              <Divider />
+            <Box component={Link} href={`/blogs/${slug}`}>
+              <Box display="flex" flexDirection="column" key={slug} rowGap={2}>
+                <Typography className="title" variant="h6" key={slug}>
+                  {title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color={`grey.${isDarkMode ? "600" : "900"}`}
+                >
+                  {description}
+                </Typography>
+                <Categories
+                  items={categories}
+                  onClick={handleCategoryClick}
+                  darkMode={isDarkMode}
+                />
+                <Typography color="grey.700">{format(date)}</Typography>
+                <Divider />
+              </Box>
             </Box>
           </Box>
         ))}
