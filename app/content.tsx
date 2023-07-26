@@ -18,7 +18,7 @@ function Description() {
           </Box>
         </b>
       </Typography>
-      <Announcement />
+      {/* <Announcement /> */}
       <Typography mb={2}>Computer Programmer&nbsp;💻🕹️☯️</Typography>
       <Box mr={1} display="inline">
         <Button
