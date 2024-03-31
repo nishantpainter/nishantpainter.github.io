@@ -62,7 +62,10 @@ function Experience() {
       <List>
         <ListItem>
           <ListItemText secondary="Surat, Gujarat, India">
-            <Link href="https://axelor.com/">Shivantra</Link> -&nbsp;
+            <Link href="https://shivantra.com/" target="_blank">
+              Shivantra
+            </Link>{" "}
+            -&nbsp;
             <b>CEO</b>
             &nbsp;
             <br />( Feb 2024 - Current Date )
@@ -70,7 +73,10 @@ function Experience() {
         </ListItem>
         <ListItem>
           <ListItemText secondary="Surat, Gujarat, India">
-            <Link href="https://axelor.com/">Axelor</Link> -&nbsp;
+            <Link href="https://axelor.com/" target="_blank">
+              Axelor
+            </Link>{" "}
+            -&nbsp;
             <b>Tech lead</b>
             &nbsp;
             <br />( Apr 2021 - Current Date )
@@ -78,14 +84,20 @@ function Experience() {
         </ListItem>
         <ListItem>
           <ListItemText secondary="Surat, Gujarat, India">
-            <Link href="https://axelor.com/">Axelor</Link> -&nbsp;
+            <Link href="https://axelor.com/" target="_blank">
+              Axelor
+            </Link>{" "}
+            -&nbsp;
             <b>Sr. System Engineer</b>&nbsp;
             <br />( Feb 2018 - Mar 2021 )
           </ListItemText>
         </ListItem>
         <ListItem>
           <ListItemText secondary="Surat, Gujarat, India">
-            <Link href="https://www.vidillion.com/">Vidillion</Link> -&nbsp;
+            <Link href="https://www.vidillion.com/" target="_blank">
+              Vidillion
+            </Link>{" "}
+            -&nbsp;
             <b>Developer</b>&nbsp;
             <br />( Jan 2017 - Nov 2017 )
           </ListItemText>
