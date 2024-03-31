@@ -24,10 +24,6 @@ export default function Content() {
         <Typography variant="h4">
           <b>Contact</b>
         </Typography>
-        <Typography variant="h6">
-          Hello 👋 I work with these&nbsp;
-          <Link href="/about#technologies">technologies</Link>.
-        </Typography>
         <Typography variant="h6">Feel free to reach out.</Typography>
 
         <Typography>

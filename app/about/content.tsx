@@ -29,14 +29,14 @@ export default function Content() {
           <b>About</b>
         </Typography>
         <Typography>
-          Software engineer with 7+ years of experience in web application
-          development with strong understanding and hands-on experience in both
-          front-end and back-end technologies. Successful in leading, managing
-          multiple software engineering teams, delivering quality products on
-          time and within budget. Expertise in multiple phases of software
-          development lifecycle, from requirement gathering to development,
-          testing and deployment. Passionate about building high-quality
-          software and project management.
+          Software engineer with {new Date().getFullYear() - 2013} years of
+          experience in web application development with strong understanding
+          and hands-on experience in both front-end and back-end technologies.
+          Successful in leading, managing multiple software engineering teams,
+          delivering quality products on time and within budget. Expertise in
+          multiple phases of software development lifecycle, from requirement
+          gathering to development, testing and deployment. Passionate about
+          building high-quality software and project management.
         </Typography>
         <Divider />
         <Experience />
@@ -60,6 +60,14 @@ function Experience() {
         <b>Experience</b>
       </Typography>
       <List>
+        <ListItem>
+          <ListItemText secondary="Surat, Gujarat, India">
+            <Link href="https://axelor.com/">Shivantra</Link> -&nbsp;
+            <b>CEO</b>
+            &nbsp;
+            <br />( Feb 2024 - Current Date )
+          </ListItemText>
+        </ListItem>
         <ListItem>
           <ListItemText secondary="Surat, Gujarat, India">
             <Link href="https://axelor.com/">Axelor</Link> -&nbsp;
