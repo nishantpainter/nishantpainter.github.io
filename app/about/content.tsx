@@ -29,14 +29,20 @@ export default function Content() {
           <b>About</b>
         </Typography>
         <Typography>
-          Software engineer with {new Date().getFullYear() - 2013} years of
-          experience in web application development with strong understanding
-          and hands-on experience in both front-end and back-end technologies.
-          Successful in leading, managing multiple software engineering teams,
-          delivering quality products on time and within budget. Expertise in
-          multiple phases of software development lifecycle, from requirement
-          gathering to development, testing and deployment. Passionate about
-          building high-quality software and project management.
+          A seasoned software engineer with over a decade of experience in web
+          application development, combining deep technical expertise with
+          proven leadership in managing cross-functional teams. Strong
+          background in both front-end and back-end technologies, with a
+          hands-on approach to building scalable, high-quality software
+          solutions.
+        </Typography>
+        <Typography>
+          As the founder and CEO of a software consultancy and development
+          agency, I bring a holistic understanding of the software development
+          lifecycle—from requirements gathering and architecture to development,
+          testing, and deployment. Known for delivering results on time and
+          within budget, with a passion for crafting exceptional products and
+          driving project success.
         </Typography>
         <Divider />
         <Experience />
